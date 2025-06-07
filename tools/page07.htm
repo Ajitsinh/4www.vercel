@@ -1,0 +1,106 @@
+<html>
+
+<head>
+<META http-equiv="imagetoolbar" content="no" />
+</head>
+
+<body topmargin="0" leftmargin="0" background="../images/grp1/bg1.gif">
+
+<table cellSpacing="1" cellPadding="1" align="center" border="1" width="100%" height="100%">
+	<tr>
+		<td align="center" width="100%" height="100%">
+
+<table cellSpacing="2" cellPadding="2" align="center" border="0" width="100%" height="100%">
+	<tr>
+		<td>
+		<td width=8%></td>
+		<td width=85%>
+
+<font face="Verdana" size="4" color="#008080">
+<p align="center"><b><tt><big><font size="6">DNS - Domain Name Service</font></big></tt></b><p>
+<tt><big>What does DNS, Domain Name Service, do for us? As the acronym implies,
+<br>
+it provides naming information about our domains, including tidbits <br>
+like Mail Server (MX) records, name-to-IP resolution (A or CNAME <br>
+records) or reverse lookups from IP address-to-name resolution (PTR <br>
+records). You can even obtain info on the host computer or operating <br>
+system (H record)! <br>
+<br>
+At a more fundamental level, the Internet works in IP addresses, with <br>
+routers directing traffic to and from these virtual locations. By the <br>
+way, routers don't like domain names. People, on the other hand, don't <br>
+like IP addresses. Just looking at them makes people nervous. More <br>
+importantly, which are you going to remember better in your head?<br>
+<br>
+&nbsp;
+<a onclick="return ShowLinkWarning()" target="_blank" href="http://64.39.31.27">
+http://64.39.31.27</a><br>
+<br>
+or <br>
+<br>
+&nbsp; <a target="_blank" href="http://www.dns.net">http://www.dns.net</a><br>
+<br>
+For most people (and companies that use domain names for marketing), <br>
+the latter would be more agreeable. Thus, DNS servers were invented to <br>
+translate between domain names and IP addresses. When you visit a Web <br>
+site, like the one above, your machine has settings to indicate which <br>
+DNS server(s) you want to use. Generally, they'll be your company's or <br>
+ISP's servers. These systems receive your requests and look things up <br>
+from there.<br>
+<br>
+If they already have the information in their cache, perhaps from <br>
+recent lookups, then they'll return you the appropriate Web page <br>
+immediately. But if they don't, they'll refer to someone else with <br>
+authority. This is called a recursive lookup. A root DNS server might <br>
+be contacted first, or some server that knows about &quot;.net&quot; addresses. <br>
+It would return information (NS records) of where the specific DNS <br>
+server for &quot;dns.net&quot; is.<br>
+<br>
+Now your DNS server at least knows where to get better information. So, <br>
+a request goes out to the DNS server for &quot;dns.net&quot; and looks for an A <br>
+record for the host &quot;www.&quot; The returned response will include the IP <br>
+address information for that host. This information is then returned to <br>
+your machine, and a packet is sent out over the Internet with a <br>
+destination IP address of &quot;64.39.31.27,&quot; which is something all routers <br>
+understand.<br>
+<br>
+Now, looking at this method of conversation, let's go back to the <br>
+question you asked.&nbsp; Since these things work for devices all over the <br>
+Internet, is there anything really location-specific to its existence?<br>
+<br>
+Now, I'm sure that everyone's DNS server (or other filters) can <br>
+prohibit groups/addresses from using their DNS server, but DNS by <br>
+itself is a fairly open protocol, so there's no reason that one DNS <br>
+server shouldn't be able to serve multiple VLANs. Watch your <br>
+utilization level, though! If you have too many users, having more than <br>
+one server might be the way to go. Redundancy is sometimes a good <br>
+thing!<br>
+<br>
+For more information, take a look at:<br>
+<br>
+* RFC 1034: <a target="_blank" href="http://www.faqs.org/rfcs/rfc1034.html">
+http://www.faqs.org/rfcs/rfc1034.html</a><br>
+* DNS Wiz: <a target="_blank" href="http://www.dnswiz.com/dnsworks.htm">
+http://www.dnswiz.com/dnsworks.htm</a><br>
+* Chapter 2: How Does DNS Work? from Paul Albitz and Cricket Liu's book <br>
+&nbsp; &quot;DNS and Bind, 3rd Edition&quot;: <br>
+&nbsp;
+<a target="_blank" href="http://www.oreilly.com/catalog/dns3/chapter/ch02.html">
+http://www.oreilly.com/catalog/dns3/chapter/ch02.html</a><br>
+<br>
+Hope this helps!<br>
+<br>
+</big></tt><br><br>
+
+		</td><td width=7%></td>
+	
+	</tr>
+</table>
+
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
